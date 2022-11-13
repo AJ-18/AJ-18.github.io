@@ -1,301 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Arjun Suresh Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
-</head>
-<body>
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>ARJUN<br>SURESH</b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#home"    onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#brangwen" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Brangwen</a> 
-    <a href="#oregon"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Oregon Trail</a> 
-    <a href="#spaceA"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Space Arena</a> 
-    <a href="#resume"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Resume</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Portfolio</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-<!-- Header -->
-<div class="w3-container" style="margin-top:80px" id="showcase">
-  <h1 class="w3-jumbo w3-text-blue"><b><A name="home">PORTFOLIO</A></b></h1>
-  <h1 class="w3-xxxlarge w3-text-blue"><b> Arjun Suresh - game designer</b></h1>
-  <hr style="width:50px;border:5px solid rgb(0, 128, 255)" class="w3-round">
-</div>
-  
- <div class="w3-row-padding">
-  <div class="w3-full">
-    <img id="portfolio" src="img1.jpg" style="width:95%" onclick="onClick(this)" alt="Concrete meets bricks">
-    <img src="Arrow.png" style="width:3%" onclick="loadIm()" alt="Concrete meets bricks">
-  </div>
-</div>
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <A name="brangwen"><h1 class="w3-jumbo w3-text-blue"><b>BRANGWEN</b></h1></A>
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Image Gallery.</b></h1>
-    <hr style="width:50px;border:5px solid rgb(0, 128, 255)" class="w3-round">
-  </div>
-  
-  <!-- Photo grid (modal) brangwen-->
-  
-  <div class="w3-row-padding">
-    <div class="w3-full">
-      <img  id="brwens" src="brwen1.jpg"  style="width:95%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="Arrow.png" style="width:3%" onclick="loadImbrwen()" alt="Concrete meets bricks">
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-  <!-- Game Desc Brangwen -->
-  <div class="w3-container" id="branwengs" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Game Description</b></h1>
-    <hr style="width:50px;border:5px solid rgb(0, 128, 255)" class="w3-round">
-    <div class="w3-light-grey">
+  <head>
+    <title>Arjun Suresh Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        font-size: 16px;
+      }
+      .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .w3-half img:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding"
+      style="z-index: 3; width: 300px; font-weight: bold"
+      id="mySidebar"
+    >
+      <br />
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-button w3-hide-large w3-display-topleft"
+        style="width: 100%; font-size: 22px"
+        >Close Menu</a
+      >
       <div class="w3-container">
-        <p>Brangwen is a collaborative project with two other friends of mine over a weekend for the global game jam earlier this year. This game was made involving unity and C#, and the premise is to capture the difference between light and dark. It was a barebones survival shooter, fighting waves of zombies that attack you. The level was designed with the theme of dark and light in mind. The zombies can either be ‘dark’ or ‘light’, and only take damage when you stand in the part of the map that correlates to their theme.
-</p><p>
-          <a href="https://globalgamejam.org/2022/games/brangwen-0">Brangwen</a>
-          </p>
+        <h3 class="w3-padding-64">
+          <b>ARJUN<br />SURESH</b>
+        </h3>
+      </div>
+      <div class="w3-bar-block">
+        <a
+          href="#home"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Home</a
+        >
+        <a
+          href="#brangwen"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Brangwen</a
+        >
+        <a
+          href="#oregon"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Oregon Trail</a
+        >
+        <a
+          href="#spaceA"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Space Arena</a
+        >
+        <a
+          href="#resume"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Resume</a
+        >
+        <a
+          href="#contact"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header
+      class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding"
+    >
+      <a
+        href="javascript:void(0)"
+        class="w3-button w3-red w3-margin-right"
+        onclick="w3_open()"
+        >☰</a
+      >
+      <span>Portfolio</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+      <!-- Header -->
+      <div class="w3-container" style="margin-top: 80px" id="showcase">
+        <h1 class="w3-jumbo w3-text-blue">
+          <b><a name="home">PORTFOLIO</a></b>
+        </h1>
+        <h1 class="w3-xxxlarge w3-text-blue">
+          <b> Arjun Suresh - game designer</b>
+        </h1>
+        <hr
+          style="width: 50px; border: 5px solid rgb(0, 128, 255)"
+          class="w3-round"
+        />
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-full">
+          <img
+            id="portfolio"
+            src="img1.jpg"
+            style="width: 95%"
+            onclick="onClick(this)"
+            alt="Concrete meets bricks"
+          />
+          <img
+            src="Arrow.png"
+            style="width: 3%"
+            onclick="loadIm()"
+            alt="Concrete meets bricks"
+          />
+        </div>
+      </div>
+      <!-- Header -->
+      <div class="w3-container" style="margin-top: 80px" id="showcase">
+        <a name="brangwen"
+          ><h1 class="w3-jumbo w3-text-blue"><b>BRANGWEN</b></h1></a
+        >
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Image Gallery.</b></h1>
+        <hr
+          style="width: 50px; border: 5px solid rgb(0, 128, 255)"
+          class="w3-round"
+        />
+      </div>
+
+      <!-- Photo grid (modal) brangwen-->
+
+      <div class="w3-row-padding">
+        <div class="w3-full">
+          <img
+            id="brwens"
+            src="brwen1.jpg"
+            style="width: 95%"
+            onclick="onClick(this)"
+            alt="Concrete meets bricks"
+          />
+          <img
+            src="Arrow.png"
+            style="width: 3%"
+            onclick="loadImbrwen()"
+            alt="Concrete meets bricks"
+          />
+        </div>
+      </div>
+
+      <!-- Modal for full size images on click-->
+      <div
+        id="modal01"
+        class="w3-modal w3-black"
+        style="padding-top: 0"
+        onclick="this.style.display='none'"
+      >
+        <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+        <div
+          class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+        >
+          <img id="img01" class="w3-image" />
+          <p id="caption"></p>
+        </div>
+      </div>
+      <!-- Game Desc Brangwen -->
+      <div class="w3-container" id="branwengs" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Game Description</b></h1>
+        <hr
+          style="width: 50px; border: 5px solid rgb(0, 128, 255)"
+          class="w3-round"
+        />
+        <div class="w3-light-grey">
+          <div class="w3-container">
+            <p>
+              Brangwen is a collaborative project with two other friends of mine
+              over a weekend for the global game jam earlier this year. This
+              game was made involving unity and C#, and the premise is to
+              capture the difference between light and dark. It was a barebones
+              survival shooter, fighting waves of zombies that attack you. The
+              level was designed with the theme of dark and light in mind. The
+              zombies can either be ‘dark’ or ‘light’, and only take damage when
+              you stand in the part of the map that correlates to their theme.
+            </p>
+            <p>
+              <a href="https://globalgamejam.org/2022/games/brangwen-0"
+                >Brangwen</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End of Section Brangwen -->
+      <!-- Begin Section Oregon -->
+      <!-- Header -->
+      <div class="w3-container" style="margin-top: 80px" id="showcase">
+        <a name="oregon">
+          <h1 class="w3-jumbo w3-text-blue"><b>OREGON</b></h1></a
+        >
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Image Gallery</b></h1>
+        <hr
+          style="width: 50px; border: 5px solid rgb(0, 128, 255)"
+          class="w3-round"
+        />
+      </div>
+      <!-- Photo grid (modal) oregon-->
+
+      <div class="w3-row-padding">
+        <div class="w3-full">
+          <img
+            src="Oregon1.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Oregon_Desc"
+          />
+        </div>
+      </div>
+
+      <!-- Game Desc Oregon -->
+      <div class="w3-container" id="oregongs" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Game Description</b></h1>
+        <hr
+          style="width: 50px; border: 5px solid rgb(0, 128, 255)"
+          class="w3-round"
+        />
+        <div class="w3-light-grey">
+          <div class="w3-container">
+            <p>
+              Oregon Trail is a web based game developed using javascript and
+              built out on the web utilizing html/css. The game files are
+              separated by client side and server side. It utilizes functioning
+              APIs, and a database to record the highscore. The game itself
+              functions like the classic ‘Oregon Trail’ game, where the player
+              can decide how they want to go through the trail, with riskier but
+              more rewarding options increasing the chance of death within their
+              party, while safer options, poses risks of being too slow.
+            </p>
+            <p>
+              <a href="https://github.com/AJ-18/asuresh-project"
+                >Oregon Trail</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- END of Section Oregon-->
+      <!-- Begin Section Space Arena -->
+      <!-- Header -->
+      <a name="spaceA"></a>
+      <div class="w3-container" style="margin-top: 80px" id="showcase">
+        <h1 class="w3-jumbo w3-text-blue"><b>Space Arena</b></h1>
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Image Gallery</b></h1>
+        <hr
+          style="width: 50px; border: 5px solid rgb(0, 128, 255)"
+          class="w3-round"
+        />
+      </div>
+      <!-- Photo grid (modal) Space-->
+
+      <div class="w3-row-padding">
+        <div class="w3-full">
+          <img
+            id="spaceA"
+            src="SpaceA1.jpg"
+            style="width: 95%"
+            onclick="onClick(this)"
+            alt="SpaceA_Desc"
+          />
+          <img
+            src="Arrow.png"
+            style="width: 3%"
+            onclick="loadSpace()"
+            alt="SpaceA"
+          />
+        </div>
+      </div>
+
+      <!-- Game Desc space-->
+      <div class="w3-container" id="meteorgs" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Game Description</b></h1>
+        <hr
+          style="width: 50px; border: 5px solid rgb(0, 128, 255)"
+          class="w3-round"
+        />
+        <div class="w3-light-grey">
+          <div class="w3-container">
+            <p>
+              Space Arena is a game developed in C++ with the use of SFML. It is
+              a top down arena game with scaling levels and enemies, and allows
+              the user to utilize powerups after each level to help them along
+              the way. The player has to survive a wave of zombies each level,
+              and after each level the arena gets bigger. There are also player
+              drops such as ammo and health packs to help the player.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr
+        style="width: 100%; border: 5px solid rgb(0, 128, 255)"
+        class="w3-round"
+      />
+      <hr
+        style="width: 100%; border: 5px solid rgb(0, 128, 255)"
+        class="w3-round"
+      />
+      <!-- Begin Section Resume -->
+      <!-- Header -->
+      <div class="w3-container" style="margin-top: 80px" id="showcase">
+        <a name="resume">
+          <h1 class="w3-jumbo w3-text-blue"><b>RESUME - Arjun Suresh</b></h1></a
+        >
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Game Designer</b></h1>
+        <hr
+          style="width: 50px; border: 5px solid rgb(0, 128, 255)"
+          class="w3-round"
+        />
+      </div>
+      <!-- Photo grid (modal) resume-->
+
+      <div class="w3-row-padding">
+        <div class="w3-full">
+          <a href="AJ_Resume.pdf" target="_blank">Resume - Arjun Suresh</a>
+
+          <!--    <img id="portfolio" src="AJ_Resume.jpg" style="width:95%" onclick="onClick(this)" alt="Concrete meets bricks"> -->
+        </div>
+      </div>
+
+      <!-- END of Section Resume-->
+      <!-- END of Section -->
+      <!-- Begin Common Section -->
+      <!-- Code By -->
+      <div class="w3-container" id="designers" style="margin-top: 75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Code By:</b></h1>
+        <hr
+          style="width: 50px; border: 5px solid rgb(0, 128, 255)"
+          class="w3-round"
+        />
+        <p>Arjun Suresh</p>
+        <p></p>
+        <p><b></b></p>
+      </div>
+
+      <!-- About Me -->
+      <a name="contact"></a>
+      <div class="w3-row-padding w3-grayscale">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <div class="w3-container">
+              <h3 class="w3-text-blue">About Me</h3>
+              <p class="w3-opacity">
+                I'm a 21 year old college student for computer science and game
+                development. I have experience with C++, C#, Unity, Java,
+                Javascript, SQL, and as well as some client and server side web
+                development. I have a passion for game design and game
+                programming, as well as being a general enthusiast for games!
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- End of Section Brangwen -->
-  <!-- Begin Section Oregon -->
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <A name="oregon">
-    <h1 class="w3-jumbo w3-text-blue"><b>OREGON</b></h1></A>
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Image Gallery</b></h1>
-    <hr style="width:50px;border:5px solid rgb(0, 128, 255)" class="w3-round">
-  </div>
-  <!-- Photo grid (modal) oregon-->
-  
-  <div class="w3-row-padding">
-    <div class="w3-full">
-       <img src="Oregon1.jpg" style="width:100%" onclick="onClick(this)" alt="Oregon_Desc">
-      </div>
-  </div>
-  
-
-  <!-- Game Desc Oregon -->
-  <div class="w3-container" id="oregongs" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Game Description</b></h1>
-    <hr style="width:50px;border:5px solid rgb(0, 128, 255)" class="w3-round">
-    <div class="w3-light-grey">
-      <div class="w3-container">
-        <p>Oregon Trail is a web based game developed using javascript and built out on the web utilizing
-           html/css. The game files are separated by client side and server side. 
-           It utilizes functioning APIs, and a database to record the highscore. 
-           The game itself functions like the classic ‘Oregon Trail’ game, where the player can decide how 
-           they want to go through the trail, with riskier but more rewarding options increasing the chance
-            of death within their party, while safer options, poses risks of being too slow. 
-</p><p>
-         <a href="https://github.com/AJ-18/asuresh-project">Oregon Trail</a>
-          </p>
-      </div>
+    <a name="EOF"></a>
+    <!-- W3.CSS Container -->
+    <div
+      class="w3-light-grey w3-container w3-padding-32"
+      style="margin-top: 75px; padding-right: 58px"
+    >
+      <p class="w3-right">
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-opacity"
+          >w3.css</a
+        >
+      </p>
     </div>
-  </div>
-  
-  <!-- END of Section Oregon-->
-  <!-- Begin Section Space Arena -->
-  <!-- Header -->
-  <A name="spaceA"></A>
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo w3-text-blue"><b>Space Arena</b></h1>
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Image Gallery</b></h1>
-    <hr style="width:50px;border:5px solid rgb(0, 128, 255)" class="w3-round">
-  </div>
-  <!-- Photo grid (modal) Space-->
-  
-  <div class="w3-row-padding">
-    <div class="w3-full">
-      <img id="spaceA" src="SpaceA1.jpg" style="width:95%" onclick="onClick(this)" alt="SpaceA_Desc">
-      <img src="Arrow.png" style="width:3%" onclick="loadSpace()" alt="SpaceA">
-    </div>
-  </div>
 
-  <!-- Game Desc space-->
-  <div class="w3-container" id="meteorgs" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Game Description</b></h1>
-    <hr style="width:50px;border:5px solid rgb(0, 128, 255)" class="w3-round">
-    <div class="w3-light-grey">
-      <div class="w3-container">
-    <p>
-      Space Arena is a game developed in C++ with the use of SFML. 
-      It is a top down arena game with scaling levels and enemies, and allows the user to utilize powerups after each level to help them along the way. 
-      The player has to survive a wave of zombies each level, and after each level the arena gets bigger. 
-      There are also player drops such as ammo and health packs to help the player.  
-    </p>
-    </div>
-  </div>
-  </div>
-  <hr style="width:100%;border:5px solid rgb(0, 128, 255)" class="w3-round">
-  <hr style="width:100%;border:5px solid rgb(0, 128, 255)" class="w3-round">
-  <!-- Begin Section Resume -->
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <A name="resume">
-    <h1 class="w3-jumbo w3-text-blue"><b>RESUME - Arjun Suresh</b></h1></A>
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Game Designer</b></h1>
-    <hr style="width:50px;border:5px solid rgb(0, 128, 255)" class="w3-round">
-  </div>
-  <!-- Photo grid (modal) resume-->
-  
-  <div class="w3-row-padding">
-    <div class="w3-full">
-      <a href="AJ_Resume.pdf" target="_blank">Resume - Arjun Suresh</a>
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
 
- <!--    <img id="portfolio" src="AJ_Resume.jpg" style="width:95%" onclick="onClick(this)" alt="Concrete meets bricks"> --> 
-    </div>
-  </div>
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
 
-  <!-- END of Section Resume-->
-  <!-- END of Section -->
-  <!-- Begin Common Section -->
-  <!-- Code By -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Code By:</b></h1>
-    <hr style="width:50px;border:5px solid rgb(0, 128, 255)" class="w3-round">
-    <p>Arjun Suresh</p>
-    <p>
-    </p>
-    <p><b></b></p>
-  </div>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+      function loadIm() {
+        var divPortfolio = document.getElementById("portfolio");
+        var portAtr = divPortfolio.getAttribute("src");
+        var portAtrS = "";
+        var atrArr = portAtr.split(/\./);
+        //alert(atrArr[0]);
 
-  <!-- About Me -->
-  <A name="contact"></A>
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3 class="w3-text-blue">About Me</h3>
-          <p class="w3-opacity">About Me</p>
-          <p></p>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-<A name="EOF"></A>
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+        var i = atrArr[0].charAt(3);
+        if (i < 3) {
+          i++;
+          portAtrS = "img" + i + ".jpg";
+          divPortfolio.setAttribute("src", portAtrS);
+          //alert(divPortfolio.getAttribute("src"));
+        } else if (i == 3) {
+          i = 1;
+          portAtrS = "img" + i + ".jpg";
+          divPortfolio.setAttribute("src", portAtrS);
+          //alert(divPortfolio.getAttribute("src"));
+        }
+      }
+      function loadImbrwen() {
+        var divPortfolio = document.getElementById("brwens");
+        var portAtr = divPortfolio.getAttribute("src");
+        var portAtrS = "";
+        var atrArr = portAtr.split(/\./);
+        //alert(atrArr[0]);
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+        var i = atrArr[0].charAt(5);
+        if (i < 2) {
+          i++;
+          portAtrS = "brwen" + i + ".jpg";
+          divPortfolio.setAttribute("src", portAtrS);
+          //alert(divPortfolio.getAttribute("src"));
+        } else if (i == 2) {
+          i = 1;
+          portAtrS = "brwen" + i + ".jpg";
+          divPortfolio.setAttribute("src", portAtrS);
+          //alert(divPortfolio.getAttribute("src"));
+        }
+      }
+      function loadSpace() {
+        var divPortfolio = document.getElementById("spaceA");
+        var portAtr = divPortfolio.getAttribute("src");
+        var portAtrS = "";
+        var atrArr = portAtr.split(/\./);
+        //alert(atrArr[0]);
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-function loadIm() {
-  var divPortfolio = document.getElementById("portfolio");
-  var portAtr = divPortfolio.getAttribute("src");
-  var portAtrS = "";
-  var atrArr = portAtr.split(/\./);
-  //alert(atrArr[0]);
-
-  var i = atrArr[0].charAt(3)
-  if(i<3) {
-    i++;
-    portAtrS = "img"+i+".jpg";
-    divPortfolio.setAttribute("src", portAtrS);
-    //alert(divPortfolio.getAttribute("src"));
-  } else if(i == 3){
-    i = 1;
-    portAtrS = "img"+i+".jpg";
-    divPortfolio.setAttribute("src", portAtrS);
-    //alert(divPortfolio.getAttribute("src"));
-  }
-
-}
-function loadImbrwen() {
-  var divPortfolio = document.getElementById("brwens");
-  var portAtr = divPortfolio.getAttribute("src");
-  var portAtrS = "";
-  var atrArr = portAtr.split(/\./);
-  //alert(atrArr[0]);
-
-  var i = atrArr[0].charAt(5);
-  if(i<2) {
-    i++;
-    portAtrS = "brwen"+i+".jpg";
-    divPortfolio.setAttribute("src", portAtrS);
-    //alert(divPortfolio.getAttribute("src"));
-  } else if(i == 2){
-    i = 1;
-    portAtrS = "brwen"+i+".jpg";
-    divPortfolio.setAttribute("src", portAtrS);
-    //alert(divPortfolio.getAttribute("src"));
-  }
-}
-  function loadSpace() {
-  var divPortfolio = document.getElementById("spaceA");
-  var portAtr = divPortfolio.getAttribute("src");
-  var portAtrS = "";
-  var atrArr = portAtr.split(/\./);
-  //alert(atrArr[0]);
-
-  var i = atrArr[0].charAt(6);
-  if(i<2) {
-    i++;
-    portAtrS = "SpaceA"+i+".jpg";
-    divPortfolio.setAttribute("src", portAtrS);
-    //alert(divPortfolio.getAttribute("src"));
-  } else if(i == 2){
-    i = 1;
-    portAtrS = "SpaceA"+i+".jpg";
-    divPortfolio.setAttribute("src", portAtrS);
-    //alert(divPortfolio.getAttribute("src"));
-  }
-
-}
-</script>
-
-</body>
+        var i = atrArr[0].charAt(6);
+        if (i < 2) {
+          i++;
+          portAtrS = "SpaceA" + i + ".jpg";
+          divPortfolio.setAttribute("src", portAtrS);
+          //alert(divPortfolio.getAttribute("src"));
+        } else if (i == 2) {
+          i = 1;
+          portAtrS = "SpaceA" + i + ".jpg";
+          divPortfolio.setAttribute("src", portAtrS);
+          //alert(divPortfolio.getAttribute("src"));
+        }
+      }
+    </script>
+  </body>
 </html>
