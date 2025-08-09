@@ -635,9 +635,10 @@ section {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact-info h3 {
@@ -744,39 +745,6 @@ section {
 .social-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
-}
-
-.contact-form {
-    background: white;
-    padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-    font-family: inherit;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #667eea;
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
 }
 
 /* ===== FOOTER ===== */
@@ -886,8 +854,9 @@ section {
     }
 
     .contact-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 1rem;
     }
 
     .skill-items {
